@@ -11,13 +11,12 @@ from rich.text import Text
 from rich.style import Style
 from carparktool import CarParkTool
 
-__CHANNEL_USERNAME__ = "CP_BombilO"
-__GROUP_USERNAME__   = "CP_BombilO_chat"
+__CHANNEL_USERNAME__ = "CPMAizal"
+__GROUP_USERNAME__   = "CPMAizalChat"
 
 def signal_handler(sig, frame):
     print("\n Bye Bye...")
     sys.exit(0)
-
 def gradient_text(text, colors):
     lines = text.splitlines()
     height = len(lines)
@@ -37,7 +36,7 @@ def gradient_text(text, colors):
 
 def banner(console):
     os.system('cls' if os.name == 'nt' else 'clear')
-    brand_name = figlet_format('CarParkingTool', font='drpepper')
+    brand_name = figlet_format('AIZAL', font='drpepper')
     colors = [
         "rgb(255,0,0)", "rgb(255,69,0)", "rgb(255,140,0)", "rgb(255,215,0)", "rgb(173,255,47)", 
         "rgb(0,255,0)", "rgb(0,255,255)", "rgb(0,191,255)", "rgb(0,0,255)", "rgb(139,0,255)",
@@ -45,10 +44,10 @@ def banner(console):
     ]
     colorful_text = gradient_text(brand_name, colors)
     console.print(colorful_text, end=None)
-    console.print("[bold green]♕ CarParkingTool[/bold green]: скрипт который поможет вам стать самым крутым.")
+    console.print("[bold green]♕ CPMAizal[/bold green]: شیئرنگ رسائی کی کلید ممنوع ہے اور اسے بلاک کر دیا جائے گا۔.")
     console.print(f"[bold green]♕ Telegram[/bold green]: [bold blue]@{__CHANNEL_USERNAME__}[/bold blue] or [bold blue]@{__GROUP_USERNAME__}[/bold blue].")
     console.print("[bold red]==================================================[/bold red]")
-    console.print("[bold yellow]! Note[/bold yellow]: Вам нужно выйти с игры перед использованием !.", end="\n\n")
+    console.print("[bold yellow]! Note[/bold yellow]: اپنے سی پی ایم کے اکاؤنٹ کو لاگ آؤٹ کرنے کے لیے برا استمال ہو گا۔ !.", end="\n\n")
 
 def load_player_data(cpm):
     response = cpm.get_player_data()
