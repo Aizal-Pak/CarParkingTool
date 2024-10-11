@@ -12,7 +12,7 @@ from rich.style import Style
 from carparktool import CarParkTool
 
 __CHANNEL_USERNAME__ = "gala_cpm"
-__Owner_USERNAME__   = "gala_original"
+__GROUP_USERNAME__   = "gala_cpm_chat"
 
 def signal_handler(sig, frame):
     print("\n Bye Bye...")
